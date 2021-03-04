@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100&display=swap');
+body {
+    margin: 0px;
+    background-color: rgb(27, 27, 27);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+h1 {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: rgb(172, 172, 172);
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin: 0;
+    text-transform: lowercase;
+}
+
+h2 {
+    position: absolute;
+    left: 0;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: rgb(172, 172, 172);
+    font-weight: 300;
+    font-size: 40px;
+    letter-spacing: 15px;
+    margin: 0;
+    writing-mode: vertical-rl;
+    text-orientation: use-glyph-orientation;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    border-top: 1.5px solid rgb(145, 145, 145);
+    border-bottom: 1.5px solid rgb(145, 145, 145);
+    padding: 10px;
+    height: 640px;
+    width: 480px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: 0 0 50px 2px rgb(145, 145, 145); */
+}
+
+.slide {
+    position: absolute;
+    font-size: 0;
+}
+
+.slide img {
+    height: 600px;
+    width: 450px;
+}
+
+.buttons {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    border: 1.8px solid rgb(145, 145, 145);
+    margin: 0 5px;
+}
+
+.button:hover {
+    background-color: rgb(145, 145, 145);
+    transition: 200ms ease-in;
+    cursor: pointer;
+}
+
+.hide {
+    opacity: 0;
+    transition: 640ms ease-out;
+}
+
+.show {
+    opacity: 1;
+    transition: 640ms ease-in;
+}
+
+.active {
+    background-color: rgb(145, 145, 145);
+}

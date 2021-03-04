@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Ping Pong Game</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="Images/pingpong.jfif">
+        </div>
+
+        <div class="main-section">
+            <h1>Ping Pong Score Keeper</h1>
+            <h2><span class="score1" id="score1">0</span> - <span class="score2" id="score2">0</span></h2>
+
+            <p>Use the buttons below to keep score.</p>
+
+            <label for="max-points">Playing To</label>
+            <select name="max-points" id="points">
+                <option value="points5">5</option>
+                <option value="points6">6</option>
+                <option value="points7">7</option>
+                <option value="points8">8</option>
+                <option value="points9">9</option>
+                <option value="points10">10</option>
+            </select>
+
+            <div class="buttons">
+                <button class="btn1" id="player1">+1 Player One</button>
+                <button class="btn2" id="player2">+1 Player Two</button>
+                <button class="btn-reset" id="reset">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="App.js"></script>
+</body>
+
+</html>
